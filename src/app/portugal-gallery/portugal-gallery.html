@@ -1,0 +1,18 @@
+<div class="gallery-container">
+  <div class="gallery-header">
+    <h1>Once in Leiria...</h1>
+    <p>Beautiful moments captured in the castle of Leiria ⛫</p>
+  </div>
+
+  <div class="photos">
+    @for (photo of photos; track photo) {
+      <img
+        class="photo"
+        [src]="'../../../assets/images/' + photo"
+        loading="lazy"
+      />
+    }
+  </div>
+
+  <p>The end...(Последние прям супер 😂)</p>
+</div>
